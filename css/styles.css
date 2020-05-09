@@ -31,3 +31,7 @@ body{
 .navbar-dark{
     background-color: #512da8;
 }
+.ext{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
