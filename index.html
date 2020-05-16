@@ -93,11 +93,106 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col order-sm-last align-self-center">
-                    <a role="button" class="btn" style="background-color: orange; color: white; padding-left: 50px; padding-right: 50px;" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserve"><b>Reserve Table</b></a>
+                    <a role="button" class="btn" style="background-color: orange; color: white; padding-left: 50px; padding-right: 50px;" data-toggle="modal" data-target="#reserveModal"><b>Reserve Table</b></a>
                 </div>
             </div>
         </div>
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="color: black;">Reserve a Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+    
+                    </div>
+                    <div class="modal-body">
+                        
+                                        <dl class="row">
+                                            <dd class="col-12 col-sm-2"><span style="color: black;">Number of Guests</span></dd>
+                                            <dd class="col-10">
+                                                <div style="color: black;">
+                                                <div class="form-check-inline">
+                                                    <label class="form-check-label">
+                                                      <input type="radio" class="form-check-input" name="optradio"> 1
+                                                    </label>
+                                                </div>
+                                                <div class="form-check-inline">
+                                                    <label class="form-check-label">
+                                                      <input type="radio" class="form-check-input" name="optradio"> 2
+                                                    </label>
+                                                </div>
+                                                <div class="form-check-inline">
+                                                    <label class="form-check-label">
+                                                      <input type="radio" class="form-check-input" name="optradio"> 3
+                                                    </label>
+                                                </div>
+                                                <div class="form-check-inline">
+                                                    <label class="form-check-label">
+                                                      <input type="radio" class="form-check-input" name="optradio"> 4
+                                                    </label>
+                                                </div>
+                                                <div class="form-check-inline">
+                                                    <label class="form-check-label">
+                                                      <input type="radio" class="form-check-input" name="optradio"> 5
+                                                    </label>
+                                                </div>
+                                                <div class="form-check-inline">
+                                                    <label class="form-check-label">
+                                                      <input type="radio" class="form-check-input" name="optradio"> 6
+                                                    </label>
+                                                </div>
+                                                </div>                                                
+                    
+                                            </dd>
+                                            <dd>
+                                                <!--for extra padding-->
+                                                <h1 style="padding-bottom: 50px;"></h1>
+                                            </dd>
+                                            
+                                            <dd class="col-12 col-sm-2"><span style="color: black;">Section</span></dd>
+                                                <dd class="col-10">
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-success active">
+                                                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking 
+                                                        </label>
+                                                        <label class="btn btn-danger">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                                        </label>                                        
+                                                      </div>
+                                                </dd>        
+                                            <dd>
+                                                <!--for extra padding-->
+                                                <h1 style="padding-bottom: 50px;"></h1>
+                                            </dd>
+                                            <dd class="col-12 col-sm-2"><span style="color: black;">Date and Time</span></dd>
+                                            <dd class="col-10">
+                                                <div class="form-group row">
+                                                    
+                                                    <div class="col-12 col-md-5">
+                                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                                    </div>
+                                                    <div class="col-12 col-md-5">
+                                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                                    </div>
+                                                </div>
+                    
+                    
+                                            </dd>
+                                        
+                                        </dl>
+                                        <a role="button" class="btn btn-secondary offset-md-2" style="margin-left: 17%;" href="#" data-dismiss="modal">Cancel</a>
+                                        <a role="button" class="btn btn-primary" href="#">Reserve</a>
+                                   
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
     </header>
+
 
     <div class="container">
         <div class="row row-content">
@@ -218,71 +313,7 @@
         </div>
     </div>
     <!--ext class defined in css for extra padding-->
-    <div class="row justify-content-center ext" id="reserve">
-        <div class="col-12 col-sm-8">
-            <div class="card">
-                <h3 class="card-header text-white" style="background-color:orange;">Reserve a Table</h3>
-                <div class="card-body">
-                    <dl class="row">
-                        <dd class="col-12 col-sm-2">Number of Guests</dd>
-                        <dd class="col-10">
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optradio"> 1
-                                </label>
-                            </div>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optradio"> 2
-                                </label>
-                            </div>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optradio"> 3
-                                </label>
-                            </div>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optradio"> 4
-                                </label>
-                            </div>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optradio"> 5
-                                </label>
-                            </div>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optradio"> 6
-                                </label>
-                            </div>                                                
-
-                        </dd>
-                        <dd>
-                            <!--for extra padding-->
-                            <h1 style="padding-bottom: 50px;"></h1>
-                        </dd>
-                        <dd class="col-12 col-sm-2">Date and Time</dd>
-                        <dd class="col-10">
-                            <div class="form-group row">
-                                
-                                <div class="col-12 col-md-5">
-                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-                                </div>
-                                <div class="col-12 col-md-5">
-                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                                </div>
-                            </div>
-
-
-                        </dd>
-                    
-                    </dl>
-                    <a role="button" class="btn btn-primary offset-md-2" href="#">Reserve</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 
     <footer class="footer">
@@ -330,12 +361,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-
-    </script>
+    
 </body>
 
 </html>
