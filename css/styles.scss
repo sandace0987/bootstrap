@@ -44,6 +44,11 @@ body{
 .navbar-dark {
      background-color: $background-dark;
 }
+.ext{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 
 .tab-content {
     border-left: 1px solid $lt-gray;
@@ -71,7 +76,33 @@ body{
     bottom: 0px;
     z-index: 1;
 }
-.ext{
-    padding-top: 40px;
-    padding-bottom: 40px;
+
+#loginModal{
+    .modal-header{
+        background-color: $background-dark;
+        color: #fff;
+    }
+    .modal-body{
+        background-color: $background-light;
+    }
+    #loginCancelBtn{
+        color: floralwhite;
+    }
+
 }
+
+#reserveModal{
+    .modal-header{
+        background-color: $background-dark;
+        color: #fff;
+    }
+    .modal-body{
+        background-color: $background-light;
+    }
+    #reserveCancelBtn{
+        color: floralwhite;
+    }
+
+}
+
+
