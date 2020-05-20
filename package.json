@@ -48,7 +48,11 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootstrap-social": "^5.1.1",
+    "clean-css": "^4.2.3",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
+    "uglify-js": "^3.9.3"
   }
 }
